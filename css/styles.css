@@ -25,6 +25,10 @@
   --secondary-btn-text-hover-color: #FFFFFF;
   --secondary-btn-bgc-hover: #404BBF;
   --secondary-btn-border: #E7E9FC;
+  /* Links */
+  --primery-social-link-color: #4D5AE5;
+  --primery-social-link-hover: #404BBF;
+  
   /* footer */
   --secondary-logo-text-color: #F4F4FD;
   --footer-text-color: #E7E9FC;
@@ -40,8 +44,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
-
 
 p{
   margin-top: 0;
@@ -285,6 +287,20 @@ p{
   margin-bottom: 8px;
 }
 
+/* Features icon */
+.icon-container{
+  display: inline-block;
+  background-color: var(--secondary-section-bgc);
+  width: 260px;
+  height: 112px;
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 8px;
+  
+}
+.bgicon{
+}
+
 /* What we are Doing */
 .container.about>.list.about{
   display: flex;
@@ -322,15 +338,47 @@ p{
 }
 
 .teamtext.p{
+  margin-bottom: 8px;
+}
+
+/* Team icon */
+.social-media.list{
+  display: flex;
   margin-bottom: 32px;
 }
 
+.social-media.link{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primery-social-link-color);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.social-media.link:hover,
+.social-media.link:focus{
+  background-color: var(--primery-social-link-hover);
+}
+
+
+.social-media-item:nth-child(1){
+  margin-left: 16px;
+}
+
+.social-media-item:not(:nth-child(1)){
+margin-left: 24px;
+}
 /* Footer */
 
 .footer {
   background-color: var(--footer-bgc);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.foot{
+  display: flex;
 }
 
 .footer-logo {
@@ -351,10 +399,21 @@ p{
 
 
 }
+.title-footer{
+  margin: 0;
+}
 
 .footer-text {
   color: var(--footer-text-color);
    width: 264px;
+}
+
+.social-footer.list{
+  display: flex;
+}
+
+.footer-inf{
+  margin-right: 120px;
 }
 
 /* List style */
@@ -364,7 +423,6 @@ p{
   margin: 0;
   padding: 0;
 }
-
 
 
 /* Portfolio */
